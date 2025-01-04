@@ -23,22 +23,22 @@ def main(args=None):
     desired_velocity = DesiredVelocity()
     
     while rclpy.ok():
-    	while True
-    		try:
-    			x = float(input("Insert the derired linear velocity: "))
-    			break
-    		except ValueError:
-    			print("Wrong input. Please insert a valid number.")
-    	while True
-    		try:
-    			z = float(input("Insert the derired angular velocity: "))
-    			break
-    		except ValueError:
-    			print("Wrong input. Please insert a valid number.")
-    	
-    	desired_velocity.velocity_publisher(x,z)
-    	time.sleep(5)
-    	desired_velocity.velocity_publisher(0.0,0.0)
+        while True:
+            try:
+                x = float(input("Insert the derired linear velocity: "))
+                break
+            except ValueError:
+                print("Wrong input. Please insert a valid number.")
+        while True:
+            try:
+                z = float(input("Insert the derired angular velocity: "))
+                break
+            except ValueError:
+                print("Wrong input. Please insert a valid number.")
+                
+        desired_velocity.velocity_publisher(x,z)
+        time.sleep(5)
+        desired_velocity.velocity_publisher(0.0,0.0)
 
     #rclpy.spin(velocity_publisher)
 
