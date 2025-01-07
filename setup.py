@@ -13,14 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='alessandro',
-    maintainer_email='alessandro.mangili1@studenti.unimi.it',
+    maintainer='root',
+    maintainer_email='andrea.loforese96@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'move_robot = assignment2_rt_ros2.move_robot:main',
+            'position = assignment2_rt_ros2.position:main',
         ],
     },
 )
