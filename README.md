@@ -4,7 +4,7 @@
 
 ## **Description**
 
-This ROS package consists of two nodes implemented in python. The purpose of the project is to control a robot in a simulation environment, provided by the assignment. The first node is called `move_robot` and it is a publisher that allows the user to set the desired velocity of the robot (in terms of linear and angular components); the robot will start moving accoding to the given input. It will move for 5 seconds: then, the robot stops and the user can insert new values. The second node is called `position`: it subcribes to the topic /odom to get information about robot position (x adn y coordinates) and simply print them on the terminal.
+This ROS package consists of two nodes implemented in python. The purpose of the project is to control a robot in a simulation environment, provided by the assignment. The first node is called `move_robot` and it is a publisher that allows the user to set the desired velocity of the robot (in terms of linear and angular components); the robot will start moving accoding to the given input. It will move for 5 seconds: then, the robot stops and the user can insert new values. The second node is called `position`: it subcribes to the topic /odom to get information about robot position (x and y coordinates) and simply print them on the terminal.
 
 
 ## **How to Run the Package**
